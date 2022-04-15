@@ -1,8 +1,16 @@
 <br>
 <div class="container-fluid">
   <div class="row">
-    <div class="col-md-12">
-      <h5>Search here</h5>
+    <div class="col-md-1"></div>
+    <div class="col-md-10">
+      <form action="/search" method="get" accept-charset="UTF-8">
+        <input id="query" name="query" type="text" class="form-control"
+          data-appkey="<%= Rails.application.credentials.edamam_app_key %>"
+          data-appid="<%= Rails.application.credentials.edamam_app_id %>" placeholder="Search for..." />
+      </form>
+      <br>
+      <div id="results"></div>
     </div>
+    <div class="col-md-1"></div>
   </div>
 </div>
