@@ -3,8 +3,8 @@
   <div class="row">
     <div class="col-md-1"></div>
     <div class="col-md-10">
-      <form action="/search" method="get" accept-charset="UTF-8">
-        <input id="query" name="query" type="text" class="form-control"
+      <form>
+        <input type="text" class="form-control"
           data-appkey="<%= Rails.application.credentials.edamam_app_key %>"
           data-appid="<%= Rails.application.credentials.edamam_app_id %>" placeholder="Search for..." />
       </form>
